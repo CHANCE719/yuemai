@@ -142,8 +142,8 @@ body::after {
   font-weight: 500;
 }
 
-.navbar .nav-links a:hover,
-.navbar .nav-links a.router-link-active {
+.navbar .nav-links a:not(.btn-register):not(.btn-login):hover,
+.navbar .nav-links a:not(.btn-register):not(.btn-login).router-link-active {
   color: var(--primary-color) !important;
 }
 
@@ -163,7 +163,9 @@ body::after {
   box-shadow: 0 2px 8px rgba(14, 165, 233, 0.3);
 }
 
-.navbar .btn-register:hover {
+.navbar .btn-register:hover,
+.navbar .btn-register:active {
+  color: #8b5cf6 !important;
   box-shadow: 0 4px 16px rgba(14, 165, 233, 0.4);
   transform: translateY(-1px);
 }
@@ -571,7 +573,7 @@ textarea::placeholder {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.04em;
   font-weight: 700;
 }
 

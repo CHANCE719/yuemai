@@ -26,6 +26,12 @@ const routes = [
     meta: { title: '乐脉工坊 - 教学方法' }
   },
   {
+    path: '/techniques/ai-compose',
+    name: 'ai-compose',
+    component: () => import('@/views/AiComposeView.vue'),
+    meta: { title: '乐脉工坊 - AI智能成曲创作工具' }
+  },
+  {
     path: '/resources',
     name: 'resources',
     component: () => import('@/views/ResourcesView.vue'),

@@ -508,6 +508,12 @@ export default {
   margin-top: 10px;
 }
 
+.btn-primary:active,
+.btn-next:active {
+  color: #8b5cf6;
+  transform: scale(0.98);
+}
+
 .step-buttons {
   display: flex;
   gap: 15px;

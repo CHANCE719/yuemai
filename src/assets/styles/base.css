@@ -10,6 +10,9 @@
   --black-color: #000;
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
+  --font-sans: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  --font-serif: 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', Consolas, monospace;
 }
 
 * {
@@ -19,13 +22,17 @@
 }
 
 body {
-  font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
-  line-height: 1.6;
+  font-family: var(--font-sans);
+  line-height: 1.7;
   color: var(--dark-color);
   background-color: var(--light-color);
   overflow-x: hidden;
   scroll-behavior: smooth;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.011em;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -45,8 +52,10 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
   letter-spacing: -0.02em;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .container {
@@ -96,13 +105,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== 标题 ===== */
 .section-title {
-  font-size: 2.25rem;
-  margin-bottom: 2rem;
+  font-size: 2.6rem;
+  margin-bottom: 2.5rem;
   text-align: center;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   color: var(--secondary-color);
   font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .section-title::after {
@@ -139,10 +149,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 900;
   color: var(--secondary-color);
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
 }
 
 .logo span {
@@ -207,7 +218,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-register:hover {
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: #8b5cf6;
+}
+
+.btn-register:active {
+  color: #8b5cf6;
+  transform: scale(0.98);
 }
 
 .hamburger {
@@ -267,10 +283,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content h1 {
-  font-size: 4rem;
-  margin-bottom: 15px;
+  font-size: 4.5rem;
+  margin-bottom: 16px;
   line-height: 1.1;
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: 0.04em;
 }
 
 .hero-content h1.logo {
@@ -284,16 +301,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content h2 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   font-weight: 500;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.08em;
 }
 
 .hero-content p {
-  font-size: 1.15rem;
+  font-size: 1.18rem;
   margin-bottom: 30px;
-  line-height: 1.7;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
 }
 
 .btn-explore {
@@ -458,10 +476,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat-item h3 {
-  font-size: 2.75rem;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  font-size: 3rem;
   margin-bottom: 8px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
 }
 
 .stat-item p {

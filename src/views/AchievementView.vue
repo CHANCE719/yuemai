@@ -163,7 +163,7 @@
               </label>
               <textarea
                 v-model.trim="form.embedCode"
-                placeholder='视频最好包含作品讲解，在 Bilibili 视频页面点击"分享"→"嵌入代码",将复制的代码粘贴到这里。例如:&#10;<iframe src="//player.bilibili.com/player.html?bvid=BV1xx411c7mD&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>'
+                placeholder='视频最好包含作品讲解，在Bilibili视频页面点击"分享"→"嵌入代码",将复制的代码粘贴到这里。例如:&#10;<iframe src="//player.bilibili.com/player.html?bvid=BV1xx411c7mD&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>'
                 rows="4"
               ></textarea>
               <span class="error" v-if="errors.embedCode">{{ errors.embedCode }}</span>

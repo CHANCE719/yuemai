@@ -1,4 +1,4 @@
-﻿<template>
+﻿﻿﻿﻿﻿﻿<template>
   <div class="categories">
     <!-- 顶部轮播 -->
     <div class="slider">
@@ -152,8 +152,9 @@ export default {
 .slider {
   position: relative;
   margin-top: 70px;
-  height: 400px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  background-color: #f1f5f9;
 }
 
 .slider-images {
@@ -168,7 +169,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 1s ease;
 }

@@ -1,4 +1,4 @@
-﻿<template>
+﻿﻿﻿﻿﻿﻿<template>
   <div class="techniques">
     <PageHeader title="教学方法" />
 
@@ -104,7 +104,8 @@ export default {
           title: 'AI智能成曲创作工具',
           image: img('images/b3.png'),
           description: '依托原创中国传统音乐曲式、调式、律制数字化素材库训练AI模型,用户可输入旋律片段、风格需求,一键生成完整传统音乐作品,同时支持自主编曲、乐器配器。',
-          detail: '从而激发学生创作灵感,进而培养传统音乐创新能力,适配中小学音乐理论课堂。'
+          detail: '从而激发学生创作灵感,进而培养传统音乐创新能力,适配中小学音乐理论课堂。',
+          to: '/techniques/ai-compose'
         },
         {
           category: 'ensemble',
@@ -141,6 +142,10 @@ export default {
   methods: {
     img,
     openModal(tech) {
+      if (tech.to) {
+        this.$router.push(tech.to)
+        return
+      }
       this.selectedTech = tech
       this.showModal = true
       document.body.style.overflow = 'hidden'
