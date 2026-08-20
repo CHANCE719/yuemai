@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="techniques">
     <PageHeader title="教学方法" />
 
@@ -67,6 +67,7 @@
 
 <script>
 import PageHeader from '@/components/PageHeader.vue'
+import { img } from '@/utils/base'
 
 export default {
   name: 'TechniquesView',
@@ -87,42 +88,42 @@ export default {
         {
           category: 'instrument',
           title: 'AI辅助交互模拟练习',
-          image: '/images/b1.png',
+          image: img('images/b1.png'),
           description: '针对传统乐器演奏学习场景,应用智能反馈系统,为使用者提供动作捕捉、音准实时纠正、节奏辅助等教学工具,学员可随时随地进行交互练习。',
           detail: '同时"乐脉工坊"后台可为学员实时生成学习报告,精准定位问题,适配中小学课堂集体练习与个人自主提升。'
         },
         {
           category: 'instrument',
           title: '虚拟乐器库音效模拟系统',
-          image: '/images/b2.png',
+          image: img('images/b2.png'),
           description: '平台拥有庞大的传统音乐知识库和数字化虚拟乐器库,可复刻古琴、古筝、二胡等数十种传统乐器的真实音色,学员无需实体乐器即可完成演奏练习、编曲创作。',
           detail: '解决中小学乐器采购成本高、个人练习不便等痛点,实现零门槛进行传统音乐学习。'
         },
         {
           category: 'theory',
           title: 'AI智能成曲创作工具',
-          image: '/images/b3.png',
+          image: img('images/b3.png'),
           description: '依托原创中国传统音乐曲式、调式、律制数字化素材库训练AI模型,用户可输入旋律片段、风格需求,一键生成完整传统音乐作品,同时支持自主编曲、乐器配器。',
           detail: '从而激发学生创作灵感,进而培养传统音乐创新能力,适配中小学音乐理论课堂。'
         },
         {
           category: 'ensemble',
           title: '数字化合奏训练课程',
-          image: '/images/b4.png',
+          image: img('images/b4.png'),
           description: '打造虚拟合奏乐团系统,支持多乐器、多声部同步合奏练习,AI智能适配声部节奏、音量,解决线下合奏排练难、时间难协调等问题。',
           detail: '覆盖传统民乐合奏、戏曲伴奏等多种形式,定期举办线上合奏展演,培养学员协作能力,同时为音乐爱好者搭建社群。'
         },
         {
           category: 'vocal',
           title: '线上沉浸式直播教学',
-          image: '/images/b5.png',
+          image: img('images/b5.png'),
           description: '线上数智平台突破地域限制,邀请非遗传承人、专业演奏家开展线上直播课,搭配高清画面、无损音质、实时连麦指导,还原线下教学体验。',
           detail: '配套数字化课件、课后AI练习系统,确保教学质量,服务全国中小学与个人爱好者。'
         },
         {
           category: 'ensemble',
           title: '数字化录音实践课程',
-          image: '/images/b6.png',
+          image: img('images/b6.png'),
           description: '提供专业数字化录音棚环境与AI后期降噪处理工具,学员可完成演唱录音,并由AI智能优化音色、节奏,生成专属个人作品。',
           detail: '配套录音技巧、传统音乐混音教学,让学员掌握传统音乐数字化制作技能,记录学习成长。'
         }
@@ -138,6 +139,7 @@ export default {
     }
   },
   methods: {
+    img,
     openModal(tech) {
       this.selectedTech = tech
       this.showModal = true

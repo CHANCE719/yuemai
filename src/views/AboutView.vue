@@ -13,13 +13,13 @@
             <p>我们相信,每个人都可以在这里找寻到血脉中的音乐梦想。</p>
           </div>
           <div class="about-image slide-in-right" v-scroll-animation>
-            <img src="/images/about-intro.png" alt="乐脉工坊" />
+            <img :src="img('images/about-intro.png')" alt="乐脉工坊" />
           </div>
         </div>
 
         <div class="about-content reverse">
           <div class="about-image slide-in-left" v-scroll-animation>
-            <img src="/images/about-teaching.png" alt="教学理念" />
+            <img :src="img('images/about-teaching.png')" alt="教学理念" />
           </div>
           <div class="about-text fade-in" v-scroll-animation>
             <h2>我们的教学理念</h2>
@@ -85,10 +85,12 @@
 
 <script>
 import PageHeader from '@/components/PageHeader.vue'
+import { img } from '@/utils/base'
 
 export default {
   name: 'AboutView',
   components: { PageHeader },
+  methods: { img },
   data() {
     return {
       timeline: [

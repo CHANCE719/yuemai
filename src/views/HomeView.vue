@@ -83,30 +83,32 @@
 
 <script>
 import StatCounter from '@/components/StatCounter.vue'
+import { img } from '@/utils/base'
 
 export default {
   name: 'HomeView',
   components: { StatCounter },
+  methods: { img },
   data() {
     return {
       featuredCourses: [
         {
           title: '传统乐器',
-          image: '/images/dixiao.png',
+          image: img('images/dixiao.png'),
           description: '跟随非遗传承人示范视频逐句学习经典曲目,AI指法分析系统实时纠错,从指法到韵味层层深入。',
           features: '非遗传承人亲授｜AI指法识别｜曲目文化背景详解',
           animation: 'slide-in-left'
         },
         {
           title: '非遗声乐',
-          image: '/images/kunquchangqiang.jpg',
+          image: img('images/kunquchangqiang.jpg'),
           description: '以典籍乐谱原声为教材,逐字学习咬字与独特润腔,AI气息与音准辅助工具帮助掌握原生唱法。',
           features: '典籍译谱｜逐字教唱｜AI实时音准反馈',
           animation: 'fade-in'
         },
         {
           title: '乐理根基',
-          image: '/images/f10.jpg',
+          image: img('images/f10.jpg'),
           description: '古谱数字化对照一目了然,知识图谱可视化讲解梳理脉络,互动式识谱闯关巩固记忆。',
           features: '古谱数字对照｜知识图谱可视化｜互动识谱闯关',
           animation: 'slide-in-right'
@@ -121,21 +123,21 @@ export default {
       newsItems: [
         {
           title: '校园传统音乐会',
-          image: '/images/yinyuehui1.jpeg',
+          image: img('images/yinyuehui1.jpeg'),
           date: '定期举办',
           description: '定期组织中小学传统音乐课堂成果展演,为学生提供展示舞台,推动数字化传统音乐进校园,助力青少年美育建设。',
           animation: 'slide-in-left'
         },
         {
           title: '非遗传承人线上大师讲座',
-          image: '/images/jiangzuo.webp',
+          image: img('images/jiangzuo.webp'),
           date: '定期直播',
           description: '邀请国家级非遗音乐传承人开设线上直播课,结合"乐脉工坊"数智录播回放,让全国师生与音乐爱好者轻松接触优质传统音乐资源。',
           animation: 'fade-in'
         },
         {
           title: '传统音乐AI创作大赛',
-          image: '/images/aizhuangzuo.jpg',
+          image: img('images/aizhuangzuo.jpg'),
           date: '年度赛事',
           description: '面向青少年与音乐爱好者,依托平台AI成曲、虚拟乐器等工具,举办传统音乐数字化创作大赛,激发传统音乐创新活力。',
           animation: 'slide-in-right'
