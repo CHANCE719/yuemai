@@ -8,8 +8,8 @@
         <li><router-link to="/categories">课程介绍</router-link></li>
         <li><router-link to="/techniques">教学方法</router-link></li>
         <li><router-link to="/resources">教学保障</router-link></li>
-        <li><router-link to="/contact">联系我们</router-link></li>
         <li><router-link to="/achievement">成果交流</router-link></li>
+        <li><router-link to="/contact">联系我们</router-link></li>
         <li><router-link to="/login" class="btn-login">登录</router-link></li>
         <li><router-link to="/register" class="btn-register">注册</router-link></li>
       </ul>

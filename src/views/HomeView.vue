@@ -3,7 +3,7 @@
     <!-- 英雄区域 -->
     <header class="hero">
       <div class="hero-content">
-        <h1 class="logo">乐脉<span>工坊</span></h1>
+        <h1 class="logo"><span class="yuemai">乐脉</span><span class="gongfang">工坊</span></h1>
         <h2>以乐为脉 以智为光</h2>
         <p>以科技为脉,传千年乐韵,将数智融入中华传统音乐传承与美育推广,让传统音乐在现代创作中焕发新生。</p>
         <router-link to="/categories" class="btn-explore">探索课程</router-link>
