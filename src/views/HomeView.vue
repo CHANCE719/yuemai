@@ -8,6 +8,19 @@
         <p>以科技为脉,传千年乐韵,将数智融入中华传统音乐传承与美育推广,让传统音乐在现代创作中焕发新生。</p>
         <router-link to="/categories" class="btn-explore">探索课程</router-link>
       </div>
+      <div class="hero-decoration" aria-hidden="true">
+        <div class="deco-ring deco-ring-1"></div>
+        <div class="deco-ring deco-ring-2"></div>
+        <div class="deco-ring deco-ring-3"></div>
+        <div class="deco-core"></div>
+        <i class="fas fa-music deco-note deco-note-1"></i>
+        <i class="fas fa-music deco-note deco-note-2"></i>
+        <i class="fas fa-music deco-note deco-note-3"></i>
+        <i class="fas fa-music deco-note deco-note-4"></i>
+        <div class="deco-wave deco-wave-1"></div>
+        <div class="deco-wave deco-wave-2"></div>
+        <div class="deco-wave deco-wave-3"></div>
+      </div>
       <div class="hero-overlay"></div>
     </header>
 
