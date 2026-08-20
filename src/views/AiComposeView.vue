@@ -826,7 +826,6 @@ export default {
   --ai-accent: #ec4899;
   --ai-gradient: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
   --ai-soft-gradient: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(236, 72, 153, 0.08) 100%);
-  padding-top: 80px;
 }
 
 /* ===== 标题紫色化 ===== */
