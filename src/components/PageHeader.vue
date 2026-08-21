@@ -20,6 +20,8 @@
         <div class="breadcrumb">
           <router-link to="/">首页</router-link>
           <span>/</span>
+          <router-link v-if="parent" :to="parentPath">{{ parent }}</router-link>
+          <span v-if="parent">/</span>
           <router-link :to="currentPath">{{ title }}</router-link>
         </div>
       </div>
@@ -34,6 +36,14 @@ export default {
     title: {
       type: String,
       required: true
+    },
+    parent: {
+      type: String,
+      default: ''
+    },
+    parentPath: {
+      type: String,
+      default: ''
     }
   },
   computed: {

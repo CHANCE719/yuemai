@@ -132,18 +132,33 @@ body::after {
 }
 
 .navbar .logo {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.02em;
+  font-family: 'PangMen Title' !important;
+  font-style: italic !important;
+  font-weight: 900 !important;
+  font-size: 2.2rem !important;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: baseline;
+  overflow: visible;
 }
 
-.navbar .logo span {
-  background: var(--gradient-accent);
+.navbar .logo .yuemai {
+  background: linear-gradient(135deg, #0284c7 0%, #7c3aed 50%, #db2777 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: transparent;
+  padding-right: 0.06em;
+  margin-right: -0.06em;
+}
+
+.navbar .logo .gongfang {
+  background: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  padding-right: 0.15em;
 }
 
 .navbar .nav-links a:not(.btn-register):not(.btn-login) {
@@ -217,6 +232,7 @@ body::after {
   font-weight: 900 !important;
   font-style: italic !important;
   letter-spacing: 0.06em !important;
+  overflow: visible !important;
 }
 
 .hero-content h1.logo span {
@@ -231,6 +247,8 @@ body::after {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
+  padding-right: 0.06em !important;
+  margin-right: -0.06em !important;
 }
 
 .hero-content h1.logo .gongfang {
@@ -238,6 +256,7 @@ body::after {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
+  padding-right: 0.15em !important;
 }
 
 .hero-content h2 {

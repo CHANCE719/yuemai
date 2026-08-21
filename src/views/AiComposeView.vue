@@ -1,6 +1,6 @@
 <template>
   <div class="ai-compose">
-    <PageHeader title="AI智能成曲创作工具" />
+    <PageHeader title="AI智能成曲创作工具" parent="教学方法" parent-path="/techniques" />
 
     <!-- 工具介绍 -->
     <section class="intro-section">
