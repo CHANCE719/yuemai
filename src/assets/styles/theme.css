@@ -1,9 +1,9 @@
 /* ===== 乐脉工坊 浅色现代主题 (Vercel / Linear 风格) ===== */
 
-/* 庞门正道标题体（CDN 外链） */
+/* 庞门正道标题体（本地 woff2） */
 @font-face {
   font-family: 'PangMen Title';
-  src: url('https://tk6970r7f.hb-bkt.clouddn.com/PangMenZhengDaoBiaoTiTiMianFeiBan-2.woff2') format('woff2');
+  src: url('/fonts/PangMenZhengDaoBiaoTiTiMianFeiBan-2.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
