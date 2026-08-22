@@ -232,14 +232,14 @@
 const defaultWorks = [
   {
     id: 'demo-2',
-    title: '你 被 骗 了',
-    author: '甲烷',
-    instrument: '滚木',
-    style: 'AI 编曲',
-    description: 'nevergonnagiveyouup',
-    embedCode: '<iframe src="//player.bilibili.com/player.html?bvid=BV1GJ411x7h7&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili-player"></iframe>',
+    title: 'Luminescence',
+    author: 'OBLEXX&CI-I4IVC3',
+    instrument: 'FL Studio',
+    style: '电子音乐',
+    description: '平台合作的独立音乐创作人制作作品',
+    embedCode: '<iframe src="//player.bilibili.com/player.html?bvid=BV17BGo6oE4H&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="bilibili-player"></iframe>',
     netdiskUrl: 'https://pan.baidu.com/s/114514',
-    likes: 114514,
+    likes: 11,
     liked: false,
     createdAt: Date.now()
   }
